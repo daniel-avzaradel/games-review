@@ -1,0 +1,68 @@
+@media screen and (max-width:880px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        height: 8vh;
+    }
+    .filme-principal .titulo{
+        font-size: 36px;
+    }
+    .filme-principal p {
+        font-size: 12px;
+    }
+    header .logo, header nav {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .botao {
+        margin-top: 5px;
+    }
+    .carousel-filmes .owl-carousel .item p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .filme-principal {
+        height: 60vh;
+        background-size: cover;
+    }
+    .botao {
+        margin-top: 5px;
+        font-size: 10px;
+        width: 190px;
+        padding: 12px;
+    }
+    .filme-principal .titulo {
+        font-size: 28px;
+    }
+    .carousel-filmes .owl-carousel .item p {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:560px) {
+    .filme-principal {
+        height: 60vh;
+        background-size: cover;
+        background-position: left;
+    }
+    .filme-principal .titulo {
+        font-size: 26px;
+    }
+    .filme-principal p {
+        font-size: 10px;
+    }
+    .carousel-filmes .owl-carousel .item p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    main .filme-principal .container h3 {
+        font-size: 32px;
+    }
+    main .filme-principal .container p {
+        font-size: 14px;
+    }
+}

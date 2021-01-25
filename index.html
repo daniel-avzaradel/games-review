@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css" class="rel">
+
+    
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./style/responsivo.css">
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.css" class="rel">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css" class="rel">
+
+
+    <title>VideoGame Ratings.com</title>
+</head>
+<body>
+     <header>
+        <div class="container">
+            <h2 class="logo">VideoGame Ratings</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">PC Games</a>
+                <a href="#">Gameboy</a>
+                <a href="#">Super Nintendo</a>
+                <a href="#">PlayStation One</a>
+
+            </nav>
+        </div>
+
+     </header>
+
+     <main>
+
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">FINAL FANTASY XIV: SHADOWBRINGERS</h3>
+                <p class="sinopse">Final Fantasy XIV is a massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix. Directed and produced by Naoki Yoshida, it was released worldwide for Microsoft Windows and PlayStation 3 in August 2013, as a replacement for the failed 2010 version of the game, with support for PlayStation 4 and OS X releasing later.
+                </p>
+
+            
+                <button role="button" class="botao">
+                    <i class="fas fa-play"></i>
+                    PLAY TRAILER
+                </button>
+                <button role="button" class="botao">
+                    <i class="fas fa-info-circle"></i>
+                    MORE INFORMATION
+                </button>
+                <br>
+               
+                <span>
+                    <i class="fas fa-star" onclick="rate()" id="star1"></i>
+                    <i class="fas fa-star" onclick="rate2()" id="star2"></i>
+                    <i class="fas fa-star" onclick="rate3()" id="star3"></i>
+                    <i class="fas fa-star" onclick="rate4()" id="star4"></i>
+                    <i class="fas fa-star" onclick="rate5()" id="star5"></i>
+                </span>
+
+                <p id="voted" onclick="voted()">Rate this game!</p>
+
+            </div>    
+
+           
+            
+        </div>
+
+     </main>
+
+
+     <div class="carousel-filmes">
+        <h4>PC GAMES</h4>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><p>Dark Souls III (2016).<br><br>Dark Souls III is an action role-playing video game developed by FromSoftware and published by Bandai Namco Entertainment for PlayStation 4, Xbox One, and Microsoft Windows. The fourth installment of the Souls series and the final installment of the Dark Souls trilogy, the game was released in Japan in March 2016 and worldwide a month later.</p>
+                <img src="img/mini001.jpg" alt="">
+            </div>
+            <div class="item"><p>The Elder Scrolls V: Skyrim (2011).<br><br>The Elder Scrolls V: Skyrim is an open world action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks. It is the fifth main installment in The Elder Scrolls series, following The Elder Scrolls IV: Oblivion, and was released worldwide for Microsoft Windows, PlayStation 3, and Xbox 360 on November 11, 2011.</p>
+                <img src="img/mini002.jpg" alt="">
+            </div>
+            <div class="item"><p>Path of Exile (2013).<br><br>Path of Exile is a free-to-play action role-playing video game developed and published by Grinding Gear Games. Following an open beta phase, the game was released for Microsoft Windows in October 2013. A version for Xbox One was released in August 2017, and a PlayStation 4 version was released in March 2019.</p>
+                <img src="img/mini003.jpg" alt="">
+            </div>
+            <div class="item"><p>Tera Online (2011).<br><br>TERA (short for The Exiled Realm of Arborea), also known as TERA Online, is a massively multiplayer online role-playing game (MMORPG) developed by Bluehole Studio. The game was released in South Korea on 25 January 2011, in North America on 1 May 2012, and in Europe on 3 May 2012, with closed and open beta tests taking place before the launch dates</p>
+                <img src="img/mini004.jpg" alt="">
+            </div>
+            <div class="item"><p>Ragnarok Online (2002).<br><br>Ragnarok Online (Korean: 라그나로크 온라인, marketed as Ragnarök, and alternatively subtitled The Final Destiny of the Gods) is a massive multiplayer online role-playing game created by Gravity based on the manhwa Ragnarok by Lee Myung-jin. It was released in South Korea on 31 August 2002 for Microsoft Windows.</p>
+                <img src="img/mini005.jpg" alt="">
+            </div>
+            <div class="item"><p>Warcraft III: The Frozen Throne (2003).<br><br>Warcraft III: The Frozen Throne is the expansion pack for Warcraft III: Reign of Chaos, a real-time strategy video game by Blizzard Entertainment. It was released worldwide on July 1, 2003 for Microsoft Windows and Mac OS X. The Frozen Throne builds upon the story of Reign of Chaos and depicts the events after the main game's conclusion.</p>
+                <img src="img/mini006.jpg" alt="">
+            </div>
+            <div class="item"><p>Monster Hunter: World (2018).<br><br>Monster Hunter: World is an action role-playing game developed and published by Capcom and the fifth mainline installment in the Monster Hunter series. It was released worldwide for PlayStation 4 and Xbox One in January 2018, with a Microsoft Windows version following in August 2018.</p>
+                <img src="img/mini007.jpg" alt="">
+            </div>
+
+        </div>
+
+     </div>
+
+
+     <script src="https://kit.fontawesome.com/2098968af1.js" crossorigin="anonymous"></script>
+     <script src="./js/owl/jquery.min.js"></script>
+     <script src="./js/owl/owl.carousel.min.js"></script>
+     <script src="./js/owl/setup.js"></script>
+     <script src="./js/owl/main.js"></script>
+
+</body>
+</html>
